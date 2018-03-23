@@ -50,3 +50,83 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+body {
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.page__nav-bar,
+.page__nav-bar-wrapper {
+    background: #116466;
+}
+
+.page__nav-bar-item {
+    padding: rem-calc(10) rem-calc(20);
+
+    &.active {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+
+.page__header {
+}
+
+.page__header-wrapper {
+    padding: rem-calc(40) 0;
+    line-height: 1.4;    
+}
+
+.page__footer {
+    background: #116466;
+}
+
+.page__footer-wrapper {
+    font-size: rem-calc(16);
+    color: #D9B08C;
+    padding: rem-calc(20) 0;
+    line-height: 1;
+}
+
+.page__container {
+    background: #FFCB9A;
+}
+
+.container__wrapper {
+    padding: rem-calc(100) 0;
+}
+
+.container__header-wrapper {
+    padding-bottom: 3.5rem;    
+}
+
+.page__accordion-item {
+    font-size: rem-calc(16);
+}
+
+.page__accordion-title {
+    font-size: rem-calc(16);
+    // background: #D1E8E2;
+}
+
+.items__container {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.item__resource {
+    width: rem-calc(350);
+    padding-left: 8px;
+    padding-right: 8px;
+}
