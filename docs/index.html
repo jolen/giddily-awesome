@@ -7,14 +7,15 @@
     <title>Zeefreaks Tribe</title>
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
-    <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+  <body class="page">
+    <div class="page__nav-bar" data-sticky-container>
+      <div class="title-bar page__nav-bar-wrapper" data-sticky data-options="marginTop:0;" style="width:100%">
         <div class="title-bar-left">
           <div class="row">
             <div class="column">
               <ul class="menu simple">
-                <li>Home</li>
-                <li><a href="./faqs.html">FAQs</a></li>                
+                <li class="page__nav-bar-item active">Home</li>
+                <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>                
               </ul>
             </div>
           </div>
@@ -22,15 +23,15 @@
       </div>
     </div>
     
-    <div class="row">
-      <div class="columns">
-        <h1>Zeefreaks</h1>
+    <div class="row page__header">
+      <div class="columns page__header-wrapper">
+        <h1 class="text-center">Zeefreaks</h1>
       </div>
     </div>
     
     <div class="row">
-      <div class="columns large-10">
-        <h2>Trading the Zeefreaks Way</h2>
+      <div class="columns">
+        <h2 class="text-center">Trading the Zeefreaks Way</h2>
         <p>
           We are a group of traders who believe that technical analysis is all you need to be profitable in trading. We do not need to hype, listen to tips and
           rumors, front run, learn fundamental analysis and the art of speculation in order to be good at trading. What we see in our charts is enough data for 
@@ -89,47 +90,58 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="columns">
-        <h2>What We Do</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="columns large-2 large-offset-1 small-12">
-        <div>
-          <div>Learn</div>
-          <div>We teach deserving students and help them become exceptional traders.</div>
+
+    <section class="page__container">
+      <div class="container__wrapper">
+        <div class="row container__header">
+          <div class="columns container__header-wrapper">
+            <h2 class="text-center">What We Do</h2>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="columns large-2 large-offset-1 small-12">
+            <div class="who__item">
+              <div class="text-center">Learn</div>
+              <div>We teach deserving students and help them become exceptional traders.</div>
+            </div>
+          </div>
+          <div class="columns large-2 small-12">
+            <div class="who__item">
+              <img class="orbit-image" src="http://www.placepuppy.net/1p/400/400" alt="Space">
+            </div>
+          </div>
+          <div class="columns large-2 small-12">
+            <div class="who__class">
+              <div class="text-center">Trade</div>
+              <div>We laugh and do RAKs together, but we hunt stocks alone.</div>
+            </div>       
+          </div>
+          <div class="columns large-2 small-12">
+            <div class="who__item">
+              <img class="orbit-image" src="http://www.placepuppy.net/1p/400/400" alt="Space">
+            </div>
+          </div>
+          <div class="columns large-2 small-12">
+            <div class="who__item">
+              <div class="text-center">RAK</div>
+              <div>Our advocacy is to share our blessings and do Random Acts of Kindness (RAKs) to those who need it the most.</div>
+            </div>      
+          </div>
         </div>
       </div>
-      <div class="columns large-2 small-12">
-        <img class="orbit-image" src="http://www.placepuppy.net/1p/300/300" alt="Space">        
-      </div>
-      <div class="columns large-2 small-12">
-        <div>
-          <div>Trade</div>
-          <div>We laugh and do RAKs together, but we hunt stocks alone.</div>
-        </div>       
-      </div>
-      <div class="columns large-2 small-12">
-        <img class="orbit-image" src="http://www.placepuppy.net/1p/300/300" alt="Space">        
-      </div>
-      <div class="columns large-2 small-12">
-        <div>
-          <div>RAK</div>
-          <div>Our advocacy is to always share our blessings and do Random Acts of Kindness (RAKs) to those who need it the most.</div>
-        </div>      
-      </div>
-    </div>
+    </section>
+    
 
-    <div class="row">
-      <div class="columns">
+    <div class="page__footer text-center">
+      <div class="page__footer-wrapper">
         We turn trash into gold.
       </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
