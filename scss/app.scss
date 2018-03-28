@@ -73,6 +73,10 @@ body {
     }
 }
 
+.page__nav-bar-logo {
+    width: rem-calc(60);
+    height: auto;
+}
 
 .page__header {
 }
@@ -91,6 +95,23 @@ body {
     color: #D9B08C;
     padding: rem-calc(20) 0;
     line-height: 1;
+}
+
+.page__splash-screen {
+    object-fit: fill;
+    min-height: 655px;
+    min-width: 1530px;
+}
+
+.page__splash-screen-light-box {
+    z-index: 0;
+    background-color: #2C3531;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    min-width: 1530px;
+    height: 655px;
+    opacity: 0.25;
 }
 
 .page__container {
