@@ -8,41 +8,59 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body class="page">
-    <div class="page__nav-bar" data-sticky-container>
+    <header class="page__nav-bar show-for-medium" data-sticky-container>
       <div class="title-bar page__nav-bar-wrapper" data-sticky data-options="marginTop:0;" style="width:100%">
         <div class="title-bar-left">
-          <div class="row">
-            <div class="column">
-              <ul class="menu simple">
-                <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li> 
-                <li class="page__nav-bar-item active">Home</li>
-                <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
-              </ul>
-            </div>
+          <ul class="menu simple">
+            <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li>
+            <li class="page__nav-bar-item active">HOME</li>
+            <li class="page__nav-bar-item">LEARN</li>
+            <li class="page__nav-bar-item">TRADE</li>
+            <li class="page__nav-bar-item">RAK</li>
+            <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <header class="page__nav-bar show-for-small-only">
+      <div class="title-bar page__nav-bar-wrapper" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <div class="row align-middle">
+          <div class="columns small-2">
+            <img src="img/zft-logo.png"/>
+          </div>
+          <div class="columns small-8 text-center">
+            Zeefreaks Tribe
+          </div>
+          <div class="columns small-2 text-right">
+            <button class="menu-icon" type="button" data-toggle="example-menu"></button>
           </div>
         </div>
-        <!-- <div class="title-bar-right">
-          <div class="row">
-            <div class="column">
-              <ul class="menu simple">
-                  <li class="page__nav-bar-item">Learn</li>
-                  <li class="page__nav-bar-item">Trade</li>
-                  <li class="page__nav-bar-item">RAK</li>
-              </ul>
-            </div>
-          </div>
-        </div> -->
       </div>
-    </div>
+      
+      <div class="title-bar page__nav-bar-wrapper" id="example-menu">
+        <div class="title-bar-left">
+          <ul class="vertical menu text-center" data-dropdown-menu>
+            <li class="page__nav-bar-item active">HOME</li>
+            <li class="page__nav-bar-item">LEARN</li>
+            <li class="page__nav-bar-item">TRADE</li>
+            <li class="page__nav-bar-item">RAK</li>
+            <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     
     <div class="page__splash-screen-light-box">
     </div>
 
-    <video class="page__splash-screen" src="https://s3-ap-southeast-1.amazonaws.com/zft-site/media/riftsite_1.mp4" autoplay muted loop="true" height="600px">
-      Sorry, your browser doesn't support embedded videos, 
-      but don't worry, you can <a href="https://s3-ap-southeast-1.amazonaws.com/zft-site/media/riftsite_1.mp4">download it</a>
-      and watch it with your favorite video player!
-    </video>
+    <section class="page__container">
+      <video class="page__splash-screen" src="https://s3-ap-southeast-1.amazonaws.com/zft-site/media/riftsite_1.mp4" autoplay muted loop="true">
+        Sorry, your browser doesn't support embedded videos, 
+        but don't worry, you can <a href="https://s3-ap-southeast-1.amazonaws.com/zft-site/media/riftsite_1.mp4">download it</a>
+        and watch it with your favorite video player!
+      </video>
+    </section>
 
     <section class="page__container">
       <div class="container__wrapper">
@@ -55,21 +73,21 @@
           <div class="columns large-4 small-12">
             <div class="who__item text-center">
               <img class="orbit-image who__logo" src="img/learn-logo.png" alt="Learn">
-              <div class="">Learn</div>
+              <h5>Learn</h5>
               <div>We teach deserving students and help them become exceptional traders.</div>
             </div>
           </div>
           <div class="columns large-4 small-12">
             <div class="who__class text-center">
               <img class="orbit-image who__logo" src="img/trade-logo.png" alt="Trade">              
-              <div class="">Trade</div>
+              <h5>Trade</h5>
               <div>We laugh and do RAKs together, but we hunt stocks alone.</div>
             </div>       
           </div>
           <div class="columns large-4 small-12">
             <div class="who__item text-center">
               <img class="orbit-image who__logo" src="img/rak-logo.png" alt="Space">              
-              <div class="">RAK</div>
+              <h5>RAK</h5>
               <div>Our advocacy is to share our blessings and do Random Acts of Kindness (RAKs) to those who need it the most.</div>
             </div>      
           </div>
