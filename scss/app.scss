@@ -93,8 +93,23 @@ h1, h2, h3, h4, h5, h6 {
     min-height: calc(100vh - 120px);
 }
 
-.page__nav-bar,
+.page__nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 100;
+    background: #2C3531;
+}
+
 .page__nav-bar-wrapper {
+    padding: rem-calc(12);
+    font-family: 'NotoSans', sans-serif;
+    font-size: rem-calc(16);
+}
+
+.page__nav-bar--transparent {
     /*Opacity start*/
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=80);
@@ -103,16 +118,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.6;
     /*Opacity end*/
     color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    z-index: 100;
-    background: #2C3531;
-    font-family: 'NotoSans', sans-serif;
-    font-size: rem-calc(16);
 }
 
 .page__nav-bar-item {
@@ -157,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__header-wrapper {
-    padding: rem-calc(70) 0 rem-calc(40);
+    padding: 6.5rem 0 2.5rem;
     line-height: 1.4;
 }
 
