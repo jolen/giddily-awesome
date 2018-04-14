@@ -72,6 +72,8 @@
 html,
 body {
     height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -93,6 +95,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .page__nav-bar,
 .page__nav-bar-wrapper {
+    /*Opacity start*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.60;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    /*Opacity end*/
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
     background: #2C3531;
     font-family: 'NotoSans', sans-serif;
     font-size: rem-calc(16);
@@ -140,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__header-wrapper {
-    padding: rem-calc(40) 0;
+    padding: rem-calc(70) 0 rem-calc(40);
     line-height: 1.4;
 }
 
@@ -155,19 +172,41 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 
     @include breakpoint(medium) {
-        font-size: rem-calc(16);        
+        font-size: rem-calc(16);
     }
-}
-
-.page__splash-screen {
-    object-fit: fill;
-    width: 100%;
-    height: auto;
 }
 
 .page__container {
     height: 100%;
-    background: #FFCB9A;    
+    position: relative;
+    overflow: hidden;
+    background: #FFCB9A;
+}
+
+.page__about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page__splash-screen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@include breakpoint(landscape) {
+    .page__splash-screen {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@include breakpoint(portrait) {
+    .page__splash-screen {
+        width: auto;
+        height: 100%;
+    }
 }
 
 .page__splash-screen-light-box {
@@ -181,16 +220,16 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.25;
 }
 
-.who__logo {
+.page__about-logo {
     height: 120px;
     width: auto;
 }
 
-.container__wrapper {
-    padding: rem-calc(100) 0;
-}
+// .container__wrapper {
+//     padding: rem-calc(100) 0;
+// }
 
-.container__header-wrapper {
+.page__about-header {
     padding-bottom: 3.5rem;    
 }
 
@@ -283,4 +322,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .icon--yt {
     background-image: url('../img/yt-logo.png');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
