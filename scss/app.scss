@@ -185,13 +185,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     position: relative;
     overflow: hidden;
-    background: #FFCB9A;
 }
 
 .page__about-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #FFCB9A;    
+    padding: rem-calc(36) 0;
+    
+    @include breakpoint(medium) {
+        padding: rem-calc(120) 0;
+    }
 }
 
 .page__splash-screen {
@@ -230,12 +235,22 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
 }
 
-// .container__wrapper {
-//     padding: rem-calc(100) 0;
-// }
-
 .page__about-header {
-    padding-bottom: 3.5rem;    
+    padding-bottom: 1.5rem;
+
+    @include breakpoint(medium) {    
+        padding-bottom: 3.5rem;    
+    }
+}
+
+.page__about-item {
+    padding: 0 2rem 2rem;
+    width: 60%;
+
+    @include breakpoint(large) {    
+        padding: 0;
+        width: 100%;    
+    }
 }
 
 .page__accordion-item {
