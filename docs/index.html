@@ -8,11 +8,30 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body class="page">
-<body class="page">
-    <header class="page__nav-bar page__nav-bar--transparent">
-      <div class="title-bar page__nav-bar-wrapper" data-responsive-toggle="page-nav" data-hide-for="">
-        <div class="row">
-          <div class="columns small-10 text-center">
+    <header class="page__nav-bar page__nav-bar--transparent show-for-medium" data-sticky-container>
+      <div class="title-bar page__nav-bar-wrapper" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="title-bar-left">
+          <ul class="menu simple">
+            <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li>
+            <li class="page__nav-bar-item active">ZFT</li>
+            <li class="page__nav-bar-item"><a href="./soon.html">WHO WE ARE</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">LEARN</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">TRADE</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">RAK</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">EVENTS</a></li>
+            <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <header class="page__nav-bar page__nav-bar--transparent show-for-small-only">
+      <div class="title-bar page__nav-bar-wrapper" data-responsive-toggle="page-nav" data-hide-for="medium">
+        <div class="row align-middle">
+          <div class="columns small-2">
+            <img src="img/zft-logo.png"/>
+          </div>
+          <div class="columns small-8 text-center">
             Zeefreaks Tribe
           </div>
           <div class="columns small-2 text-right">
@@ -20,8 +39,7 @@
           </div>
         </div>
       </div>
-      
-      <div class="title-bar page__nav-bar-wrapper" id="page-nav" data-animate="hinge-in-from-top spin-out">
+      <div class="title-bar page__nav-bar-wrapper" id="page-nav" data-animate="hinge-in-from-top">
         <div class="title-bar-left">
           <ul class="vertical menu text-center" data-dropdown-menu>
             <li class="page__nav-bar-item active">ZFT</li>
@@ -37,7 +55,7 @@
     </header>
     <section class="page__container">
       <div class="page__splash-screen-light-box"></div>
-      <video class="page__splash-screen" src="https://s3-ap-southeast-1.amazonaws.com/www.zftribe.ph/media/riftsite_1.mp4" autoplay="" muted="" loop="true">
+      <video class="page__splash-screen" src="https://s3-ap-southeast-1.amazonaws.com/www.zftribe.ph/media/riftsite_1.mp4" autoplay="" muted="" loop="true" playsinline="">
               Sorry, your browser doesn't support embedded videos, 
               but don't worry, you can <a href="https://s3-ap-southeast-1.amazonaws.com/www.zftribe.ph/media/riftsite_1.mp4">download it</a>
               and watch it with your favorite video player!
@@ -53,17 +71,17 @@
         <div class="columns large-4 small-12 text-center">
           <img class="page__about-logo" src="img/learn-logo.png" alt="Learn">
           <h5>Learn</h5>
-          <div>We are life-changers. Our mentorship program aims to create independent traders. We aim not only to learn together, but also to grow together. #TouchingLives</div>
+          <div>Open the possibilities of living life with freedom to focus on what matters most to you. Our mentorship programs aim to teach you how to trade independently. Join us, let’s learn together and be boundless in our growth. #TouchingLives</div>
         </div>
         <div class="columns large-4 small-12 text-center">
           <img class="page__about-logo" src="img/trade-logo.png" alt="Trade">
           <h5>Trade</h5>
-          <div>We are performance-driven traders. Our results speak for themselves. We believe in walking the talk. #RealTrades</div>
+          <div>Walk the talk, a phrase that every ZFT members live by. Being a performance driven organization, our traders’ results speak for themselves. #RealTrades</div>
         </div>
         <div class="columns large-4 small-12 text-center">
           <img class="page__about-logo" src="img/rak-logo.png" alt="Space">              
           <h5>RAK</h5>
-          <div>We believe in giving back to the community. We aim to make an impact, a difference in the lives of other people. This is embodied through our #RandomActsOfKindness projects.</div>
+          <div>Giving back to the community is a culture everyone in ZFT adheres to. Making an impact and bringing difference into the lives of every living organism, may it be people, animals or the environment is on top of our priorities. #RandomActsofKindness</div>
         </div>
       </div>
     </section>
