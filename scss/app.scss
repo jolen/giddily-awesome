@@ -230,6 +230,15 @@ h1, h2, h3, h4, h5, h6 {
         width: auto;
         height: 100%;
     }
+
+    @include breakpoint(small only) {
+        display: none;
+    }
+}
+
+.mobile-poster {
+    background: url('../img/mobilesplash.jpeg');
+    background-size: cover;
 }
 
 .page__splash-screen-light-box {
@@ -242,6 +251,8 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     opacity: 0.25;
 }
+
+
 
 .page__about-logo {
     height: 120px;
