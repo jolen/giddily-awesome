@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     margin: 0;
     z-index: 100;
-    background: #2C3531;
+    padding: 0;
 }
 
 .page__nav-bar-wrapper {
@@ -131,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.6;
     /*Opacity end*/
     color: white;
+    padding: 20px;
 }
 
 .page__nav-bar-item {

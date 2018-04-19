@@ -1,4 +1,8 @@
 $(window).on("scroll", function() {
+	if ($(".page__nav-bar").hasClass("float-me") === false) {
+		return;
+	}
+
     if ($(window).scrollTop() > $(".page__splash-screen").height() - $(".page__nav-bar").height()) {
         $(".page__nav-bar").removeClass("page__nav-bar--transparent");
     } else {
