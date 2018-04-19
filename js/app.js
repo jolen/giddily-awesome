@@ -7,20 +7,20 @@ $(window).on("scroll", function() {
 })
 
 
-// $(window).resize(function() {
-//     var winHeight = $(window).height();
-//     var winWidth = $(window).width();
+$(window).resize(maintainVideoAspectRatio);
+$(document).ready(maintainVideoAspectRatio);
 
-//     if (winWidth > winHeight) {
-//         $(".page__splash-screen").removeClass("portrait");
-//         $(".page__splash-screen").addClass("landscape");
-//     } else {
-//         $(".page__splash-screen").removeClass("landscape");
-//         $(".page__splash-screen").addClass("portrait");
-//     }
+function maintainVideoAspectRatio() {
+    var winHeight = $(window).height();
+    var winWidth = $(window).width();
 
-//     console.log("h: " + winHeight + ", w: " + winWidth);
-
-// });
+    if (winWidth / winHeight > 1.778) {
+        $(".page__splash-screen").removeClass("portrait");
+        $(".page__splash-screen").addClass("landscape");
+    } else {
+        $(".page__splash-screen").removeClass("landscape");
+        $(".page__splash-screen").addClass("portrait");
+    }	
+}
 
 $(document).foundation();

@@ -220,17 +220,13 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: 0;
     left: 0;
-}
 
-@include breakpoint(landscape) {
-    .page__splash-screen {
+    &.landscape {
         width: 100%;
         height: auto;
     }
-}
-
-@include breakpoint(portrait) {
-    .page__splash-screen {
+    
+    &.portrait {
         width: auto;
         height: 100%;
     }
