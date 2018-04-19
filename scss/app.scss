@@ -237,8 +237,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-poster {
-    background: url('../img/mobilesplash.jpeg');
-    background-size: cover;
+    @include breakpoint(small only) {
+        background: url('../img/mobilesplash.jpeg');
+        background-size: cover;
+    }
+
+    @include breakpoint(medium) {
+        background: black;
+    }
 }
 
 .page__splash-screen-light-box {
