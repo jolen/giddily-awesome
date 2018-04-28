@@ -205,6 +205,15 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+.page__who-we-are {
+    height: auto;
+    width: 250px;
+    
+    @include breakpoint(medium) {
+        width: 300px;
+    }
+}
+
 .page__about-container {
     display: flex;
     flex-direction: column;
@@ -247,19 +256,6 @@ h1, h2, h3, h4, h5, h6 {
         background: black;
     }
 }
-
-.page__splash-screen-light-box {
-    z-index: 0;
-    background-color: #2C3531;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0.25;
-}
-
-
 
 .page__about-logo {
     height: 120px;
