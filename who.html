@@ -8,26 +8,24 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body class="page">
-    <header class="page__nav-bar page__nav-bar--transparent float-me show-for-medium">
-      <div>
-        <div class="title-bar page__nav-bar-wrapper">
-          <div class="title-bar-left">
-            <ul class="menu simple">
-              <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li>
-              <li class="page__nav-bar-item"><a href="./index.html">ZFT</a></li>
-              <li class="page__nav-bar-item active">WHO WE ARE</li>
-              <li class="page__nav-bar-item"><a href="./soon.html">LEARN</a></li>
-              <li class="page__nav-bar-item"><a href="./soon.html">TRADE</a></li>
-              <li class="page__nav-bar-item"><a href="./soon.html">RAK</a></li>
-              <li class="page__nav-bar-item"><a href="./soon.html">EVENTS</a></li>
-              <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
-            </ul>
-          </div>
+    <header class="page__nav-bar show-for-medium" data-sticky-container>
+      <div class="title-bar page__nav-bar-wrapper" data-sticky data-options="marginTop:0;" style="width:100%">
+        <div class="title-bar-left">
+          <ul class="menu simple">
+            <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li>
+            <li class="page__nav-bar-item"><a href="./index.html">ZFT</a></li>
+            <li class="page__nav-bar-item active">WHO WE ARE</li>
+            <li class="page__nav-bar-item"><a href="./soon.html">LEARN</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">TRADE</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">RAK</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">EVENTS</a></li>
+            <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
+          </ul>
         </div>
       </div>
     </header>
-    
-    <header class="page__nav-bar page__nav-bar--transparent float-me show-for-small-only">
+
+    <header class="page__nav-bar show-for-small-only">
       <div class="title-bar page__nav-bar-wrapper" data-responsive-toggle="page-nav" data-hide-for="medium">
         <div class="row align-middle">
           <div class="columns small-2">
@@ -42,7 +40,7 @@
         </div>
       </div>
       
-      <div class="title-bar page__nav-bar-wrapper" id="page-nav" data-animate="hinge-in-from-top">
+      <div class="title-bar page__nav-bar-wrapper" id="page-nav" data-animate="hinge-in-from-top spin-out">
         <div class="title-bar-left">
           <ul class="vertical menu text-center" data-dropdown-menu>
             <li class="page__nav-bar-item"><a href="./index.html">ZFT</a></li>
@@ -56,12 +54,13 @@
         </div>
       </div>
     </header>
-    <section class="page__container page__about-container">
-      <div class="page__header-wrapper text-center">
-        <img class="page__who-we-are" src="img/zft-logo.png" alt="Zeefreaks Tribe" />
-      </div>
+    <section class="page__about-container">
       <div class="row">
         <div class="column">
+          <div class="page__header-wrapper text-center">
+            <img class="page__who-we-are" src="img/zft-logo.png" alt="Zeefreaks Tribe" />
+          </div>
+          <h2 class="text-center">Who We Are</h2>
           <p>
               We are a group of traders from all over the world with the common goal of bettering themselves,
               achieving financial freedom, and enhancing the community.
