@@ -13,26 +13,26 @@
       crossorigin="anonymous">
   </head>
   <body class="page">
-    <header class="page__nav-bar page__nav-bar--transparent float-me show-for-medium">
+    <header class="page__nav-bar show-for-medium">
       <div>
         <div class="title-bar page__nav-bar-wrapper">
           <div class="title-bar-left">
             <ul class="menu simple">
-              <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li>
-              <li class="page__nav-bar-item active">ZFT</li>
-              <li class="page__nav-bar-item"><a href="./who.html">WHO WE ARE</a></li>
-              <li class="page__nav-bar-item"><a href="./soon.html">LEARN</a></li>
-              <li class="page__nav-bar-item"><a href="./soon.html">TRADE</a></li>
-              <li class="page__nav-bar-item"><a href="./soon.html">RAK</a></li>
-              <li class="page__nav-bar-item"><a href="./events.html">EVENTS</a></li>
-              <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
+            <li class="page__nav-bar-logo"><img src="img/zft-logo.png"/></li>
+            <li class="page__nav-bar-item"><a href="./index.html">ZFT</a></li>
+            <li class="page__nav-bar-item"><a href="./who.html">WHO WE ARE</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">LEARN</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">TRADE</a></li>
+            <li class="page__nav-bar-item"><a href="./soon.html">RAK</a></li>
+            <li class="page__nav-bar-item active">EVENTS</li>
+            <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
     
-    <header class="page__nav-bar page__nav-bar--transparent float-me show-for-small-only">
+    <header class="page__nav-bar show-for-small-only">
       <div class="title-bar page__nav-bar-wrapper" data-responsive-toggle="page-nav" data-hide-for="medium">
         <div class="row align-middle">
           <div class="columns small-2">
@@ -46,56 +46,39 @@
           </div>
         </div>
       </div>
-      
+        
       <div class="title-bar page__nav-bar-wrapper" id="page-nav" data-animate="hinge-in-from-top">
         <div class="title-bar-left">
           <ul class="vertical menu text-center" data-dropdown-menu>
-            <li class="page__nav-bar-item active">ZFT</li>
+            <li class="page__nav-bar-item"><a href="./index.html">ZFT</a></li>
             <li class="page__nav-bar-item"><a href="./who.html">WHO WE ARE</a></li>
             <li class="page__nav-bar-item"><a href="./soon.html">LEARN</a></li>
             <li class="page__nav-bar-item"><a href="./soon.html">TRADE</a></li>
             <li class="page__nav-bar-item"><a href="./soon.html">RAK</a></li>
-            <li class="page__nav-bar-item"><a href="./events.html">EVENTS</a></li>
+            <li class="page__nav-bar-item active">EVENTS</li>
             <li class="page__nav-bar-item"><a href="./faqs.html">FAQs</a></li>
           </ul>
         </div>
       </div>
     </header>
-    <section class="page__container mobile-poster">
-      <div class="page__splash-screen-light-box"></div>
-      <video
-        class="page__splash-screen"
-        src="https://www.zftribe.ph/media/riftsite_1.mp4"
-        autoplay=""
-        muted=""
-        loop="true"
-        playsinline="">
-              Sorry, your browser doesn't support embedded videos, 
-              but don't worry, you can <a href="https://www.zftribe.ph/media/riftsite_1.mp4">download it</a>
-              and watch it with your favorite video player!
-      </video>
-    </section>
     <section class="page__about-container">
       <div class="row">
         <div class="column page__about-header">
-          <h2 class="text-center">What We Do</h2>
+          <h2 class="text-center">Events</h2>
         </div>
       </div>
       <div class="row">
-        <div class="columns large-4 small-12 page__about-item text-center">
-          <img class="page__about-logo" src="img/learn-logo.png" alt="Learn">
-          <h5></h5>
-          <div>Open the possibilities of living life with freedom to focus on what matters most to you. Our mentorship programs aim to teach you how to trade independently. Join us, let’s learn together and be boundless in our growth. #TouchingLives</div>
-        </div>
-        <div class="columns large-4 small-12 page__about-item text-center">
-          <img class="page__about-logo" src="img/trade-logo.png" alt="Trade">
-          <h5></h5>
-          <div>Walk the talk, a phrase that every ZFT member live by. Being a performance driven organization, our results speak for themselves. #RealTrades</div>
-        </div>
-        <div class="columns large-4 small-12 page__about-item text-center">
-          <img class="page__about-logo" src="img/rak-logo.png" alt="Space">              
-          <h5></h5>
-          <div>Giving back to the community is a culture everyone in ZFT adheres to. Making an impact and bringing difference into the lives of every living organism, may it be people, animals or the environment is on top of our priorities. #RandomActsofKindness</div>
+        <div class="colum">
+            <iframe 
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FZeefreaks%2Fposts%2F1059749580842033&width=500" 
+                width="500" 
+                height="697" 
+                style="border:none;overflow:hidden" 
+                scrolling="no" 
+                frameborder="0" 
+                allowTransparency="true" 
+                allow="encrypted-media">
+            </iframe>  
         </div>
       </div>
     </section>
@@ -122,9 +105,9 @@
       </div>
     </footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
