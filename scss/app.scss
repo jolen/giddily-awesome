@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.6;
     /*Opacity end*/
     color: white;
-    padding: 20px;
+    padding: rem-calc(20);
 }
 
 .page__nav-bar-item {
@@ -207,6 +207,67 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.page__footer-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-evenly;
+    white-space: nowrap;
+
+    @include breakpoint(medium) {
+        flex-direction: row;
+    }
+}
+
+.page__footer-items a {
+    display: inline-block;
+    padding: rem-calc(30) 0 rem-calc(36);
+    color: #8e8e8e;
+    line-height: rem-calc(60);
+}
+
+.page__footer-items a.youtube:hover i {
+    background: #cb322c;
+    border-color: #cb322c;
+}
+
+.page__footer-items a.facebook:hover i {
+    background: #3b5996;
+    border-color: #3b5996;
+}
+
+.page__footer-items a:hover i {
+    color: #fff;
+}
+
+.page__footer-items i {
+    transition: all .3s ease-in-out;
+    border: 1px solid #D1E8E2;
+    font-size: rem-calc(24);
+    float: left;
+    padding: rem-calc(18);
+    width: rem-calc(60);
+    height: rem-calc(60);
+    border-radius: 50%;
+    text-align: center;
+    margin-right: rem-calc(10);
+    display: block;
+    color: #D1E8E2;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+
+// .page__footer-items div {
+//     overflow: hidden;
+//     line-height: 20px;
+//     padding-top: 7px;
+// }
+
 .page__container {
     height: 100%;
     position: relative;
@@ -215,10 +276,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .page__who-we-are {
     height: auto;
-    width: 250px;
+    width: rem-calc(250);
     
     @include breakpoint(medium) {
-        width: 300px;
+        width: rem-calc(300);
     }
 }
 
@@ -266,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__about-logo {
-    height: 120px;
+    height: rem-calc(120);
     width: auto;
 }
 
