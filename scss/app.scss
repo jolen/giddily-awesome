@@ -52,6 +52,11 @@
 @include motion-ui-animations;
 
 @font-face {
+    font-family: "Autumn-in-November";
+    src: url("../fonts/Autumn-in-November.ttf") format("truetype");
+}
+
+@font-face {
     font-family: "Lato";
     src: url("../fonts/Lato-Regular.ttf") format("truetype"),
          url("../fonts/Lato-Bold.ttf") format("truetype");
@@ -330,8 +335,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__about-logo {
-    height: rem-calc(120);
+    height: rem-calc(160);
     width: auto;
+    padding: rem-calc(16);
 }
 
 .page__about-header {
@@ -349,6 +355,10 @@ h1, h2, h3, h4, h5, h6 {
     @include breakpoint(large) {    
         padding: 0;
         width: 100%;    
+    }
+
+    h4 {
+        font-family: 'Autumn-in-November', 'Lato', 'sans-serif';
     }
 }
 
