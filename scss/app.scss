@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -79,11 +80,12 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Signika', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
 }
 
 .text-center {
@@ -113,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'NotoSans', sans-serif;
     font-size: rem-calc(14);
 
-    @include breakpoint(medium) {    
+    @include breakpoint(medium) {
         font-size: rem-calc(16);
     }
 
@@ -121,9 +123,9 @@ h1, h2, h3, h4, h5, h6 {
         /*Override menu.simple*/
         margin-left: rem-calc(12);
 
-        @include breakpoint(large) {    
+        @include breakpoint(large) {
             margin-left: rem-calc(16);
-        }   
+        }
     }
 }
 
@@ -147,9 +149,9 @@ h1, h2, h3, h4, h5, h6 {
 
     @include breakpoint(large) {
         font-size: rem-calc(16);
-        padding: rem-calc(10) rem-calc(20);        
-    }    
-    
+        padding: rem-calc(10) rem-calc(20);
+    }
+
     & a {
         color: #FFF;
     }
@@ -187,6 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__header-wrapper {
+    font-family: Muli;
     padding: 6.5rem 0 2.5rem;
     line-height: 1.4;
 }
@@ -217,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 .page__footer-items {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
@@ -287,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 .page__who-we-are {
     height: auto;
     width: rem-calc(250);
-    
+
     @include breakpoint(medium) {
         width: rem-calc(300);
     }
@@ -345,9 +348,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #FFCB9A;    
+    background: #FFCB9A;
     padding: rem-calc(36) 0;
-    
+
     @include breakpoint(medium) {
         padding: rem-calc(120) 0;
     }
@@ -362,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
         height: auto;
     }
-    
+
     &.portrait {
         width: auto;
         height: 100%;
@@ -393,8 +396,8 @@ h1, h2, h3, h4, h5, h6 {
 .page__about-header {
     padding-bottom: 1.5rem;
 
-    @include breakpoint(medium) {    
-        padding-bottom: 3.5rem;    
+    @include breakpoint(medium) {
+        padding-bottom: 3.5rem;
     }
 }
 
@@ -402,9 +405,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 2rem 2rem;
     width: 60%;
 
-    @include breakpoint(large) {    
+    @include breakpoint(large) {
         padding: 0;
-        width: 100%;    
+        width: 100%;
     }
 
     h4 {
@@ -420,39 +423,48 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.page__accordion-content {
+    padding: 0;
+
+    p {
+        padding: 0 rem-calc(12);
+    }
+}
+
 .page__accordion-item {
     font-size: rem-calc(14);
-    
+
     @include breakpoint(medium) {
-        font-size: rem-calc(16);        
+        font-size: rem-calc(16);
     }
 }
 
 .page__accordion-title {
     font-size: rem-calc(14);
-    font-family: 'Lato', sans-serif;
-    color: #116466;
-    
+    font-family: 'Muli', sans-serif;
+    background-color: #A9A9A9;
+    color: #fff;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
     @include breakpoint(medium) {
-        font-size: rem-calc(16); 
+        font-size: rem-calc(20);
     }
 
     &:before {
-        //override the :before pseudo and adjust the position of +/-        
+        //override the :before pseudo and adjust the position of +/-
         right: 0.5rem;
 
         @include breakpoint(medium) {
             right: 1rem;
         }
     }
+}
 
-    .is-active > &,
-    &:hover,
-    &:focus {
-        background-color: #116466;
-        color: #D1E8E2;
-        font-weight: bold;
-    }
+.page__accordion-hero {
+    width: 100%;
+    height: auto;
+    margin-bottom: rem-calc(14);
 }
 
 .items__container {
@@ -467,29 +479,28 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
 
     @include breakpoint(medium) {
-        flex-direction: row;        
+        flex-direction: row;
     }
 }
 
 .item__resource {
     width: 100%;
-    margin: rem-calc(8) 0;
-    border: 1px solid #e6e6e6;
+    // border: 1px solid #e6e6e6;
 
     @include breakpoint(medium) {
-        margin: rem-calc(8);
-        width: rem-calc(350);        
+        width: rem-calc(350);
     }
 
     .card {
         //override the .card class and remove the border
         border: none;
+        margin: 0;
     }
 
     .card img {
-        margin: auto;
-        width: 70%;
-        height: auto;
+        // margin: auto;
+        width: 350px;
+        height: 350px;
     }
 }
 
